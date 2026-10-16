@@ -1,0 +1,21 @@
+{
+  "name": "clonecraft-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first clean-room website analysis and reconstruction planning studio",
+  "scripts": {
+    "dev": "node src/server.mjs",
+    "analyze": "node src/cli.mjs analyze",
+    "blueprint": "node src/cli.mjs blueprint",
+    "test": "node --test",
+    "check": "node --check src/analyzer.mjs && node --check src/server.mjs && node --check src/cli.mjs && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "playwright": "^1.56.1"
+  }
+}
