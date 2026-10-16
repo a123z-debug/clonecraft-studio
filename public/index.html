@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloneCraft Studio | مختبر إعادة بناء المواقع</title>
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<main class="container">
+  <header><div class="kicker"><span class="dot"></span> LOCAL-FIRST · CLEAN-ROOM</div><h1>CloneCraft <span>Studio</span></h1><p class="lead">من رابط إلى مخطط إعادة بناء: تحليل الواجهة، خريطة الصفحات، تفاعلاتها، وصور مرجعية.</p></header>
+  <section class="panel" aria-labelledby="startTitle"><h2 id="startTitle">ابدأ فحص موقع</h2>
+    <form id="form"><label for="url">رابط الموقع</label><input type="url" id="url" name="url" placeholder="https://example.com" required autocomplete="url">
+    <div class="line"><label for="pages">عدد الصفحات</label><select id="pages"><option value="1">صفحة واحدة</option><option value="4" selected>4 صفحات</option><option value="8">8 صفحات</option><option value="15">15 صفحة</option></select></div>
+    <label class="consent"><input type="checkbox" id="agree" required> أؤكد أن الفحص مصرح به، ولن أنسخ محتوى أو علامات دون حقوق.</label>
+    <button id="submit" type="submit">تحليل الموقع <span aria-hidden="true">↗</span></button></form>
+    <p id="status" class="status" role="status" aria-live="polite">جاهز للفحص.</p>
+    <section id="result" class="result" hidden><h3>التقرير جاهز</h3><p id="summary"></p><div class="links"><a id="blueprint" target="_blank" rel="noopener" href="#">فتح مخطط البناء</a><a id="raw" target="_blank" rel="noopener" href="#">فتح بيانات JSON</a><a id="screens" target="_blank" rel="noopener" href="#">أول لقطة شاشة</a></div></section>
+  </section>
+  <section class="steps" aria-label="سير العمل"><div><span>01</span><h3>استكشاف</h3><p>رصد الصفحات العامة والعناصر المرئية.</p></div><div><span>02</span><h3>مخطط</h3><p>توثيق التصميم والتفاعلات والفجوات.</p></div><div><span>03</span><h3>إعادة البناء</h3><p>تسليم المخطط لوكيل البرمجة لإنشاء مشروع مستقل.</p></div></section>
+  <footer>أداة تحليل أولية · ليست أداة لاستخراج الخادم أو قاعدة البيانات · تعمل محليًا فقط.</footer>
+</main></body></html>
